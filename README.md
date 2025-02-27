@@ -1,3 +1,5 @@
+**⚠️ Warning:** This API does not work in Turkey. It functions properly outside of Turkey.
+
 # React Movie App
 
 React Movie App is a movie search application built with React.js, Vite, and Tailwind CSS. It fetches movie data from The Movie Database (TMDb) API and allows users to search for movies while tracking trending searches using Appwrite.
