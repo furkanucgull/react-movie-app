@@ -5,6 +5,7 @@ import Search from "./components/Search.jsx";
 import Loading from "./components/Loading.jsx";
 import MovieCard from "./components/MovieCard.jsx";
 import { getTrendingMovies, updateSearchCount } from "../appwrite.js";
+import heroBanner from "/public/hero.png";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
@@ -81,7 +82,7 @@ const App = () => {
       <div className="wrapper">
         <header>
           <h1>
-            <img src="../public/hero.png" alt="Hero Banner" />
+            <img src={heroBanner} alt="Hero Banner" />
             Find <span className="text-gradient">Movies</span> You will enjoy
           </h1>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
